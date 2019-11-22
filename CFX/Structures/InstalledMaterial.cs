@@ -66,6 +66,7 @@ namespace CFX.Structures
         /// <summary>
         /// A list of where the on the production unit the materials / parts were installed.
         /// </summary>
+        [JsonProperty(ItemTypeNameHandling = TypeNameHandling.Auto)]
         public List<InstalledComponent> InstalledComponents
         {
             get;
