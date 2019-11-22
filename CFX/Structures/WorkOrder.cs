@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CFX.Structures
 {
-
     /// <summary>
-    /// A structure that describes an order to produce a specifified quantity of units of a particular part number /
-    /// part revision within the factory environment.
+    /// A structure that describes a Work Order to produce (with specified Recipes), for a particular part number/part revision within the factory environment.
     /// </summary>
     public class WorkOrder
     {
@@ -140,9 +138,9 @@ namespace CFX.Structures
         }
 
         /// <summary>
-        /// The quantity of units to be produced by this Work Order.
+        /// The list of Recipes to be produced by this Work Order, and the quantity for each
         /// </summary>
-        public double Quantity
+        public List<WorkOrderRecipe> Recipes
         {
             get;
             set;

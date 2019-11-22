@@ -29,7 +29,22 @@ namespace CFX.InformationSystem.WorkOrderManagement
     ///       "DateRequired": "2018-09-15T17:00:00",
     ///       "PartNumber": "1122-3344",
     ///       "PartRevision": "B",
-    ///       "Quantity": 220.0,
+    ///       "Recipes": [
+    ///         {
+    ///             "WorkOrderRecipe":
+    ///             {
+    ///                 "Name": "Recipe 1",
+    ///                 "Revision": "1.0", 
+    ///                 "Quantity": "500.0"
+    ///             },
+    ///             "WorkOrderRecipe":
+    ///             {
+    ///                 "Name": "Recipe 2",
+    ///                 "Revision": "1.0", 
+    ///                 "Quantity": "1000.0"
+    ///             },
+    ///         }
+    ///       ],
     ///       "UnitOfMeasure": null,
     ///       "DependsOn": null
     ///     }
