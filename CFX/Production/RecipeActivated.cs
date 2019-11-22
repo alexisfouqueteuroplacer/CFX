@@ -14,6 +14,20 @@ namespace CFX.Production
     ///   "Lane": 1,
     ///   "Stage": null,
     ///   "ExpectedCycleTime": 60,
+    ///   "StagesExpectedCycleTimes" : [
+    ///     {
+    ///         "StageExpectedCycleTime":
+    ///         {
+    ///             StageSequence = 1;
+    ///             ExpectedCycleTime = 20;
+    ///         },
+    ///         "StageExpectedCycleTime":
+    ///         {
+    ///             StageSequence = 2;
+    ///             ExpectedCycleTime = 40;
+    ///         }
+    ///     }
+    ///   ],
     ///   "ExpectedUnitsPerWorkTransaction": 1,
     ///   "NumberOfComponentsPerUnit": 500
     /// }
@@ -63,6 +77,17 @@ namespace CFX.Production
         /// positioning, etc.
         /// </summary>
         public double ExpectedCycleTime
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// For each stage, the total amount of time that is expected to process one unit or group of units (as in the case of a carrier or panelized PCB), 
+        /// assuming no blocked or starved conditions at the station.  This includes both productive and non-productive time, such as transfer, 
+        /// positioning, etc.
+        /// </summary>
+        public List<StageExpectedCycleTime> StagesExpectedCycleTimes
         {
             get;
             set;
