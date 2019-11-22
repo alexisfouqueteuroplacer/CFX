@@ -61,6 +61,15 @@ namespace CFX.Structures
         }
 
         /// <summary>
+        /// The PCB dimensons
+        /// </summary>
+        public PCBDimensions PCBDimensions
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// The MIME type of the binary data contained by the RecipeData property.
         /// </summary>
         public string MimeType
