@@ -40,5 +40,14 @@ namespace CFX.Structures
             get;
             set;
         }
+
+        /// <summary>
+        /// The particular Stage where the component has been installed
+        /// </summary>
+        public Stage Stage
+        {
+            get;
+            set;
+        }
     }
 }
